@@ -83,8 +83,10 @@ public class ConsumerConfiguration
     /// <summary>
     ///     Creates ConsumerConfiguration
     /// </summary>
-    public ConsumerConfiguration(ushort prefetchCount,
-        IReadOnlyDictionary<Queue, PerQueueConsumerConfiguration> perQueueConfigurations)
+    public ConsumerConfiguration(
+        ushort prefetchCount,
+        IReadOnlyDictionary<Queue, PerQueueConsumerConfiguration> perQueueConfigurations
+    )
     {
         PrefetchCount = prefetchCount;
         PerQueueConfigurations = perQueueConfigurations;
